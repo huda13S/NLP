@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Natural Language Processing and Sentiment Analysis</title>
+  </head>
+  <body>
+    <h1>Natural Language Processing (NLP) and Sentiment Analysis</h1>
+    <img src="https://spectrum.ieee.org/media-library/two-silhouettes-facing-each-other-with-different-computer-components-inside.jpg?id=33390875&width=1200&height=600&coordinates=0%2C375%2C0%2C375" alt="NLP Image" style="width: 500px;">
+    <p>Enter a sentence or phrase to analyze:</p>
+    <input type="text" id="input-text">
+    <button onclick="analyzeSentiment()">Analyze</button>
+    <p>Sentiment score: <span id="sentiment-score"></span></p>
+    <p>Sentiment label: <span id="sentiment-label"></span></p>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder@4.2.0/dist/universal-sentence-encoder.min.js"></script>
+    <script>
+      // JavaScript code for NLP and sentiment analysis goes here
+      async function analyzeSentiment() {
+        const text = document.getElementById('input-text').value;
+        const model = await use.load();
+        const embeddings = await model.embed([text]);
+        const predictions = await model.predict(embeddings).array();
+        const sentimentScore = predictions[0];
+        const sentimentLabel = sentimentScore >= 0.5 ? 'Positive' : 'Negative';
+        document.getElementById('sentiment-score').textContent = sentimentScore.toFixed(2);
+        document.getElementById('sentiment-label').textContent = sentimentLabel;
+      }
+    </script>
+  </body>
+</html>
+

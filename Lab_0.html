@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Raffiné</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #d3d3d3; /* Marbled grey background color */
+            color: #2e2728;
+            margin: 20px;
+            padding: 20px;
+            text-align: center; /* Center align the text */
+        }
+
+        h1, h2, h3 {
+            color: #2e2728;
+        }
+
+        h2 {
+            font-style: italic;
+            font-size: 1.2em; /* Increased size of h2 */
+        }
+
+        h3 {
+            font-size: 1.5em; /* Increased size of h3 */
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 40%; /* Adjusted image size */
+            height: auto;
+            margin: 20px;
+            display: inline-block; /* Display images side by side */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 0.8em; /* Smaller font size for the table */
+        }
+
+        th, td {
+            border: 1px solid #8d6e63;
+            padding: 10px; /* Reduced padding for table cells */
+            text-align: left;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px; /* Reduced margin for input and textarea */
+            width: 80%; /* Reduced width for better display */
+            padding: 8px; /* Reduced padding for input and textarea */
+            box-sizing: border-box;
+            background-color: #f5f5f5; /* Light grey background */
+            border: 1px solid #ddd; /* Light grey border */
+        }
+
+        button {
+            background-color: #8d6e63;
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5d4037;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Café Raffiné</h1>
+    <h2><i>with love</i></h2>
+
+    <p>Indulge in the finest baked goods and aromatic coffee in a cozy and refined atmosphere.</p>
+
+    <div class="image-container">
+        <img src="https://i.pinimg.com/originals/ff/db/32/ffdb32723cb646d24b8531bbd7df88ec.jpg" alt="Coffee Image">
+        <img src="https://i.pinimg.com/originals/a5/2c/95/a52c951f2d5823bc74db7811f8b795cf.jpg" alt="Image 2">
+    </div>
+
+    <h3>Our Menu</h3>
+    <p>Explore our delectable menu featuring a variety of artisanal pastries, flavorful coffees, and delightful desserts.</p>
+
+    <h3>Special Offers</h3>
+    <p>Check out our special offers and discounts for a delightful and affordable experience at Café Raffiné.</p>
+
+    <h3 class="ambience">Ambience</h3>
+    <p class="ambience">Experience a warm and inviting ambiance at Café Raffiné. Enjoy our thoughtfully designed space where every detail enhances your dining experience.</p>
+    <div class="image-container">
+        <img src="https://i.pinimg.com/originals/7e/6d/e0/7e6de004506c0753bfc421f61e033577.jpg" alt="Ambience Image">
+        <img src="https://i.pinimg.com/originals/70/6f/fc/706ffc9e5f8f4708b327ca35144dd486.jpg" alt="Additional Ambience Image">
+    </div>
+
+    <h3 class="best-product">Discover our best croissants, freshly baked to perfection!</h3>
+    <div class="image-container">
+        <img src="https://i.pinimg.com/originals/cd/b9/24/cdb92428c29c58adccad67f71114afd3.jpg" alt="Best Croissants Image">
+    </div>
+
+    <h3 class="customer-reviews">Our Customers Love Us</h3>
+    <div class="image-container">
+        <img src="https://i.pinimg.com/originals/69/92/ca/6992ca718e787f1b08d85f66011306e3.jpg" alt="Customer Review 1">
+        <img src="https://i.pinimg.com/originals/c5/85/33/c585338b25a432071aab9857e6ac5c91.jpg" alt="Customer Review 2">
+    </div>
+
+    <h3 class="faq-box">Frequently Asked Questions</h3>
+    <p class="faq-box">Explore our FAQs to find answers to common questions about Café Raffiné.</p>
+
+    <h3 class="contact-info">Contact Information</h3>
+    <table>
+        <tr>
+            <th>Your Name</th>
+            <td>Café Raffiné</td>
+        </tr>
+        <tr>
+            <th>Your Address</th>
+            <td>Raffiné Bakers, 4382 Townwest St, Dallas, Texas</td>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <td>479-251-8231</td>
+        </tr>
+    </table>
+
+<form>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+
+    <button type="submit">Submit Inquiry</button>
+</form>
+
+</body>
+
+</html>
+
